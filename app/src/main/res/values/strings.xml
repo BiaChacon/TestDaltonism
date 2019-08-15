@@ -1,21 +1,23 @@
 <resources>
-    <string name="app_name">TesteDaltonismo</string>
-    <string name="teste_1">Teste 1</string>
-    <string name="teste_2">Teste 2</string>
-    <string name="teste_3">Teste 3</string>
-    <string name="vefificar">Vefificar</string>
-    <string name="fa_a_o_teste">Faça o teste !</string>
-    <string name="suas_respostas">Suas respostas:</string>
-    <string name="daltonismo_uma_perturba_o_da_percep_o_visual_caracterizada_pela_incapacidade_de_diferenciar_todas_ou_algumas_cores_manifestando_se_muitas_vezes_pela_dificuldade_em_distinguir_o_verde_do_vermelho">
+    <string name="app_name" translatable="false">TesteDaltonismo</string>
+    <string name="teste_1" translatable="false">Teste 1</string>
+    <string name="teste_2" translatable="false">Teste 2</string>
+    <string name="teste_3" translatable="false">Teste 3</string>
+    <string name="vefificar" translatable="false">Vefificar</string>
+    <string name="fa_a_o_teste" translatable="false">Faça o teste !</string>
+    <string name="suas_respostas" translatable="false">Suas respostas:</string>
+    <string name="daltonismo_uma_perturba_o_da_percep_o_visual_caracterizada_pela_incapacidade_de_diferenciar_todas_ou_algumas_cores_manifestando_se_muitas_vezes_pela_dificuldade_em_distinguir_o_verde_do_vermelho"
+            translatable="false">
         Daltonismo é uma perturbação da percepção visual caracterizada pela incapacidade de diferenciar todas ou algumas
         cores, manifestando-se muitas vezes pela dificuldade em distinguir o verde do vermelho.
     </string>
-    <string name="o_que_daltonismo">O que é Daltonismo ?</string>
-    <string name="resultado_do_teste">Resultado_do_teste</string>
-    <string name="resposta_3">Resposta_3</string>
-    <string name="resposta_2">Resposta_2</string>
-    <string name="resposta_1">Resposta_1</string>
-    <string name="qual_n_mero_voc_v_na_imagem_abaixo">Qual número você vê na imagem abaixo ?</string>
-    <string name="digite">Digite</string>
-    <string name="cancelar">Cancelar</string>
+    <string name="o_que_daltonismo" translatable="false">O que é Daltonismo ?</string>
+    <string name="resultado_do_teste" translatable="false">Resultado_do_teste</string>
+    <string name="resposta_3" translatable="false">Resposta_3</string>
+    <string name="resposta_2" translatable="false">Resposta_2</string>
+    <string name="resposta_1" translatable="false">Resposta_1</string>
+    <string name="qual_n_mero_voc_v_na_imagem_abaixo" translatable="false">Qual número você vê na imagem abaixo ?</string>
+    <string name="digite" translatable="false">Digite</string>
+    <string name="cancelar" translatable="false">Cancelar</string>
+    <string name="o_que" translatable="false">O que é ?</string>
 </resources>

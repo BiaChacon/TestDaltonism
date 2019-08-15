@@ -8,54 +8,56 @@
         tools:context=".TesteActivity">
 
     <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="213dp"
+            android:layout_height="45dp"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/respostaEditText"
             android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
             android:hint="@string/digite"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.25"/>
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.753"/>
     <TextView
             android:text="Qual número você vê na imagem abaixo ?"
-            android:layout_width="331dp"
-            android:layout_height="98dp" android:id="@+id/textView5"
+            android:layout_width="345dp"
+            android:layout_height="71dp" android:id="@+id/textView5"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintHorizontal_bias="0.437" app:layout_constraintVertical_bias="0.089"
+            android:layout_marginBottom="32dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+            app:layout_constraintVertical_bias="0.0"
             android:textSize="30sp" android:layout_marginTop="8dp"/>
     <Button
             android:text="@android:string/ok"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button"
-            android:layout_marginBottom="84dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintStart_toEndOf="@+id/respostaEditText" android:layout_marginStart="8dp"
-            app:layout_constraintHorizontal_bias="0.379"/>
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:id="@+id/enviarButton"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+            app:layout_constraintStart_toEndOf="@+id/respostaEditText"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.757" app:layout_constraintHorizontal_bias="1.0"/>
     <Button
             android:text="@string/cancelar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
             android:id="@+id/cancelaButton"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="32dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.585"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/respostaEditText"/>
+            android:layout_marginEnd="32dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" app:layout_constraintHorizontal_bias="0.498"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/respostaEditText"
+            app:layout_constraintVertical_bias="0.539"/>
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/im2"
+            android:layout_width="240dp"
+            android:layout_height="238dp" app:srcCompat="@mipmap/ic_launcher"
             android:id="@+id/imageView" android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/textView5" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="32dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="32dp" android:layout_marginBottom="32dp"
-            app:layout_constraintBottom_toTopOf="@+id/button"/>
+            app:layout_constraintBottom_toTopOf="@+id/enviarButton" app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.053"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.testedaltonismo
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,14 +13,26 @@ class TesteActivity : AppCompatActivity() {
         setContentView(R.layout.activity_teste)
 
         var param = intent.extras
-        var id = param?.getInt("ID")
+        var codImagem = param?.getInt("codImagem")
 
-        if(id == 1)
-            imageView.setImageResource(R.drawable.im2)
-        if(id == 2)
-            imageView.setImageResource(R.drawable.im15)
-        if(id == 2)
-            imageView.setImageResource(R.drawable.im74)
+        when(codImagem){
+            1->imageView.setImageResource(R.drawable.im2)
+            2->imageView.setImageResource(R.drawable.im15)
+            3->imageView.setImageResource(R.drawable.im74)
+        }
+
+        cancelaButton.setOnClickListener {
+            setResult(Activity.RESULT_CANCELED)
+            finish()
+        }
+
+        enviarButton.setOnClickListener {
+            var i = Intent()
+            i.putExtra("resposta", respostaEditText.text.toString())
+            setResult(Activity.RESULT_OK, i)
+            finish()
+        }
+        
 
     }
 }

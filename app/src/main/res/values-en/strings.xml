@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TesteDaltonismo</string>
+    <string name="app_name">" Daltonism test"</string>
+    <string name="app_name" translatable="false">Color blindness Test</string>
+    <string name="cancelar" translatable="false">Cancel</string>
+    <string name="teste_1">Test 1</string>
+    <string name="teste_2">Test 2</string>
+    <string name="teste_3">Test 3</string>
+    <string name="vefificar">Check</string>
+    <string name="suas_respostas">Your answers:</string>
+    <string name="digite">Type</string>
+    <string name="fa_a_o_teste">Take the test!</string>
+    <string name="o_que">What is it ?</string>
+    <string name="o_que_daltonismo">What is Daltonism ?</string>
+    <string name="qual_n_mero_voc_v_na_imagem_abaixo">What number do you see in the image below?</string>
+    <string name="resultado_do_teste">Test_result</string>
+    <string name="resposta_1">Answer_1</string>
+    <string name="resposta_2">Answer_2</string>
+    <string name="resposta_3">Answer_3</string>
+    <string name="daltonismo_uma_perturba_o_da_percep_o_visual_caracterizada_pela_incapacidade_de_diferenciar_todas_ou_algumas_cores_manifestando_se_muitas_vezes_pela_dificuldade_em_distinguir_o_verde_do_vermelho">
+        "Daltonism is a disturbance of visual perception characterized by the inability to differentiate all or some
+        colors, manifailing many times by the difficulty in distinguishing the green from the red. "
+    </string>
 </resources>

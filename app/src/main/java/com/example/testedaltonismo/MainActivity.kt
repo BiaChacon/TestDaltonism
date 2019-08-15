@@ -37,9 +37,9 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "erro na verifição" ,Toast.LENGTH_SHORT).show()
             }else {
                 if(resultT1 == 2 && resultT2 == 15 && resultT3 == 74)
-                    resultFinal = "você não é daltônico"
+                    resultFinal = "Normal"
                 else
-                    resultFinal =  "você é daltônico, procure um médico"
+                    resultFinal =  "Procurar um médico"
             }
         }
 
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                 when(resultCode){
                     Activity.RESULT_OK->{
 
-                        resultT1 = data?.getStringExtra("resposta")?.toInt()
+                        resultT1 = data?.getStringExtra("resposta")?.toInt()!!
                         Log.i("TEST", "Resultado $resultT1")
 
                         resposta1TextView.text = "$resultT1"
@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
                 when(resultCode){
                     Activity.RESULT_OK->{
 
-                        resultT2 = data?.getStringExtra("resposta")?.toInt()
+                        resultT2 = data?.getStringExtra("resposta")?.toInt()!!
                         Log.i("TEST", "Resultado $resultT2")
 
                         resposta1TextView.text = "$resultT2"
@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
                 when(resultCode){
                     Activity.RESULT_OK->{
 
-                        resultT3 = data?.getStringExtra("resposta")?.toInt()
+                        resultT3 = data?.getStringExtra("resposta")?.toInt()!!
                         Log.i("TEST", "Resultado $resultT3")
 
                         resposta1TextView.text = "$resultT3"

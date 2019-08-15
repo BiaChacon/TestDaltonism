@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">" Daltonism test"</string>
-    <string name="app_name" translatable="false">Color blindness Test</string>
     <string name="cancelar" translatable="false">Cancel</string>
     <string name="teste_1">Test 1</string>
     <string name="teste_2">Test 2</string>

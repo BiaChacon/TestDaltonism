@@ -36,10 +36,11 @@ class MainActivity : AppCompatActivity() {
             if(resultT1 == 0 || resultT2 == 0  || resultT3 == 0 ){
                 Toast.makeText(this, "erro na verifição" ,Toast.LENGTH_SHORT).show()
             }else {
-                if(resultT1 == 2 && resultT2 == 15 && resultT3 == 74)
+                if(resultT1 == 2 && resultT2 == 15 && resultT3 == 74) {
                     resultFinal = "Normal"
-                else
-                    resultFinal =  "Procurar um médico"
+                }else {
+                    resultFinal = "Procurar um médico"
+                }
             }
         }
 
@@ -84,7 +85,7 @@ class MainActivity : AppCompatActivity() {
                     Activity.RESULT_OK->{
 
                         resultT1 = data?.getStringExtra("resposta")?.toInt()!!
-                        Log.i("TEST", "Resultado $resultT1")
+                        Log.i("RESULTADO", "Resultado $resultT1")
 
                         resposta1TextView.text = "$resultT1"
 
@@ -99,9 +100,9 @@ class MainActivity : AppCompatActivity() {
                     Activity.RESULT_OK->{
 
                         resultT2 = data?.getStringExtra("resposta")?.toInt()!!
-                        Log.i("TEST", "Resultado $resultT2")
+                        Log.i("RESULTADO", "Resultado $resultT2")
 
-                        resposta1TextView.text = "$resultT2"
+                        resposta2TextView.text = "$resultT2"
 
                     }
                     Activity.RESULT_CANCELED->{
@@ -114,9 +115,9 @@ class MainActivity : AppCompatActivity() {
                     Activity.RESULT_OK->{
 
                         resultT3 = data?.getStringExtra("resposta")?.toInt()!!
-                        Log.i("TEST", "Resultado $resultT3")
+                        Log.i("RESULTADO", "Resultado $resultT3")
 
-                        resposta1TextView.text = "$resultT3"
+                        resposta3TextView.text = "$resultT3"
                     }
                     Activity.RESULT_CANCELED->{
 

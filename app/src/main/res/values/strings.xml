@@ -3,7 +3,7 @@
     <string name="teste_1">Teste 1</string>
     <string name="teste_2">Teste 2</string>
     <string name="teste_3">Teste 3</string>
-    <string name="vefificar" translatable="false">Vefificar</string>
+    <string name="vefificar">Vefificar</string>
     <string name="fa_a_o_teste">Faça o teste !</string>
     <string name="suas_respostas">Suas respostas:</string>
     <string name="daltonismo_uma_perturba_o_da_percep_o_visual_caracterizada_pela_incapacidade_de_diferenciar_todas_ou_algumas_cores_manifestando_se_muitas_vezes_pela_dificuldade_em_distinguir_o_verde_do_vermelho"

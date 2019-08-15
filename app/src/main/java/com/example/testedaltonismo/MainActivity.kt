@@ -32,18 +32,6 @@ class MainActivity : AppCompatActivity() {
 
         resultadoTextView.text = ("$resultFinal")
 
-        verificarButton.setOnClickListener {
-            if(resultT1 == 0 || resultT2 == 0  || resultT3 == 0 ){
-                Toast.makeText(this, "erro na verifição" ,Toast.LENGTH_SHORT).show()
-            }else {
-                if(resultT1 == 2 && resultT2 == 15 && resultT3 == 74) {
-                    resultFinal = "Normal"
-                }else {
-                    resultFinal = "Procurar um médico"
-                }
-            }
-        }
-
     }
 
     fun  clique(v:View){
@@ -77,6 +65,21 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun verificar(v:View){
+
+        if(resultT1 == 0 || resultT2 == 0  || resultT3 == 0 ){
+            Toast.makeText(this, "erro na verifição" ,Toast.LENGTH_SHORT).show()
+        }else {
+            if(resultT1 == 2 && resultT2 == 15 && resultT3 == 74) {
+                resultFinal = "Normal"
+                resultadoTextView.text = ("$resultFinal")
+            }else {
+                resultFinal = "Procurar um médico"
+                resultadoTextView.text = ("$resultFinal")
+            }
+        }
+
+    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         when(requestCode){

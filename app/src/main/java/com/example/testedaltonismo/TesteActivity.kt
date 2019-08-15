@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_teste.*
 
 class TesteActivity : AppCompatActivity() {
@@ -23,6 +24,7 @@ class TesteActivity : AppCompatActivity() {
 
         cancelaButton.setOnClickListener {
             setResult(Activity.RESULT_CANCELED)
+            Toast.makeText(this, "Cancelou" , Toast.LENGTH_SHORT).show()
             finish()
         }
 
@@ -32,7 +34,7 @@ class TesteActivity : AppCompatActivity() {
             setResult(Activity.RESULT_OK, i)
             finish()
         }
-        
+
 
     }
 }

@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
 import android.view.View
 import android.widget.EditText
@@ -131,4 +132,27 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        outState.putInt("resposta1", resultT1?:0)
+        outState.putInt("resposta2", resultT2?:0)
+        outState.putInt("resposta3", resultT3?:0)
+
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+
+        resultT1 = savedInstanceState.getInt("resposta1")
+        resultT2 = savedInstanceState.getInt("resposta2")
+        resultT3 = savedInstanceState.getInt("resposta3")
+
+        resposta1TextView.text = "$resultT1"
+        resposta2TextView.text = "$resultT2"
+        resposta3TextView.text = "$resultT3"
+
+    }
+
 }
